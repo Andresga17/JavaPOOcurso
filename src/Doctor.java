@@ -8,11 +8,13 @@ public class Doctor {
     //se puede realizar un accion al llamar el metodo; como se muestra aqui.
     Doctor(){
         System.out.println("Construyendo el objeto Doctor");
-        id++;
     }
 
-    Doctor(String name){
+    Doctor(String name, String speciality){//Sobrecarga de metodos. Agregando los argumentos minimos necesarios al metodo constructor para crear un objeto tipo Doctor
+        id++;
         System.out.println("El nombre del doctor asignado es: " + name);
+        this.name = name;
+        this.speciality = speciality;
     }
 
     //Comportamientos o metodos de la clase Doctor
