@@ -4,14 +4,14 @@ public class Main {
     public static void main(String[] args) {
         //Utilizado el objeto (METODO CONSTRUCTOR)
         //El metodo constructor nunca retorna un valor
-        Doctor myDoctor = new Doctor();
+        /*Doctor myDoctor = new Doctor();
         myDoctor.name = "Alejandro Rodriguez";
         myDoctor.showName();
         myDoctor.showId();
 
 
         Doctor myDoctorAnn = new Doctor();
-        myDoctor.showId();
+        myDoctor.showId();*/
 
         showMenu();
     }
