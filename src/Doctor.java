@@ -2,6 +2,7 @@ public class Doctor {
     //Atributos de la clase Doctor
     static int id = 0;//Siempre será autoincrementado
     String name;
+    String email;
     String speciality;
 
     //Declarando el metodo constructor dentro de la clase
@@ -12,7 +13,7 @@ public class Doctor {
 
     Doctor(String name, String speciality){//Sobrecarga de metodos. Agregando los argumentos minimos necesarios al metodo constructor para crear un objeto tipo Doctor
         id++;
-        System.out.println("El nombre del doctor asignado es: " + name);
+        /*System.out.println("El nombre del doctor asignado es: " + name);*/
         this.name = name;
         this.speciality = speciality;
     }

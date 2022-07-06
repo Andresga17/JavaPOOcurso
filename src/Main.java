@@ -16,8 +16,12 @@ public class Main {
         //showMenu();
         //Creando un objeto tipo doctor con los parametros minimos necesarios asignados en el metodo constructor de la clase Doctor
         Doctor myDoctor = new Doctor("Andres Gonzalez", "Neurologia");
-        System.out.println(myDoctor.name);
-        System.out.println(myDoctor.speciality);
+        System.out.println("Nombre del doctor: " + myDoctor.name);
+        System.out.println("email: " + myDoctor.speciality);
+
+        System.out.println();
+//Creando un objeto de tipo patient
+        Patient patient = new Patient("Alejandra", "alejandra@mail.com");
     }
 
 }
