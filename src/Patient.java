@@ -15,7 +15,34 @@ public class Patient {
     Patient (String name, String email){
         this.name = name;
         this.email = email;
-        this.weight = 54.5;
-        System.out.println(weight + "kg");
+    }
+    //Creando un metodo get y set
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public String getWeight() {
+        return this.weight + "kg.";
+    }
+
+    public String getHeight() {
+        return height + "m";
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public String getPhoneNumber() {
+        return "Teléfono: " + phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        if (phoneNumber.length() > 8) {
+            System.out.println("El número telefónico debe ser de máximo 8 dígitos");
+        }else if (phoneNumber.length() == 8) {
+            this.phoneNumber = phoneNumber;
+        }
+
     }
 }

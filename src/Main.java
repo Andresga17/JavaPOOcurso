@@ -22,6 +22,11 @@ public class Main {
         System.out.println();
 //Creando un objeto de tipo patient
         Patient patient = new Patient("Alejandra", "alejandra@mail.com");
+        patient.setWeight(54.6);
+        System.out.println(patient.getWeight());
+//Usando get y set para asignar y validar las variables
+        patient.setPhoneNumber("12345678");
+        System.out.println(patient.getPhoneNumber());
     }
 
 }
