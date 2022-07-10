@@ -1,22 +1,19 @@
 import java.util.ArrayList;
 import java.util.Date;
-public class Doctor {
+public class Doctor extends User {
     //Atributos de la clase Doctor
-    static int id = 0;//Siempre será autoincrementado
-    private String name;
-    private String email;
+
     private String speciality;
 
     //Declarando el metodo constructor dentro de la clase
-    //se puede realizar un accion al llamar el metodo; como se muestra aqui.
+    //se puede realizar una accion al llamar el metodo; como se muestra aqui.
     Doctor(){
         System.out.println("Construyendo el objeto Doctor");
     }
 
-    Doctor(String name, String speciality){//Sobrecarga de metodos. Agregando los argumentos minimos necesarios al metodo constructor para crear un objeto tipo Doctor
-        id++;
+    Doctor(String name, String email){//Sobrecarga de metodos. Agregando los argumentos minimos necesarios al metodo constructor para crear un objeto tipo Doctor
         /*System.out.println("El nombre del doctor asignado es: " + name);*/
-        this.name = name;
+        super(name, email);
         this.speciality = speciality;
     }
 
@@ -34,18 +31,10 @@ public class Doctor {
         availableAppointments.add(new Doctor.AvailableAppointment(date,time));
     }
 
-    public ArrayList<AvailableAppointment> getAvailableAppointments() { //Devuelve la lista completa de las citas
+    public ArrayList<AvailableAppointment> getAvailableAppointments() { //Array que devuelve la lista completa de las citas
         return availableAppointments;
     }
 
-    //Definiendo set y get de name
-    public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
     //Definiendo set y get de speciality
     public String getSpeciality() {
         return this.speciality;

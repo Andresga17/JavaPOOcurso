@@ -36,7 +36,7 @@ public class Main {
         patient.setWeight(54.6);
         System.out.println(patient.getWeight());
 
-//Usando get y set para asignar y validar las variables
+//Usando get y set para asignar y validar las variables de la clase patient
         patient.setPhoneNumber("12345678");
         System.out.println(patient.getPhoneNumber());
     }

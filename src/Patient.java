@@ -1,20 +1,15 @@
-public class Patient {
+public class Patient extends User {
     //Atributos de la clase Patient
-    int id;
-    private String name;
-    private String email;
-    private String address;
-    private String phoneNumber;
+
     private String birthday;
     private double weight;
     private double height;
-    String typeBlood;
+    private String typeBlood;
 
     //Declarando el metodo constructor. name y email son los datos minimos necesarios para crear una instancia de esta clase
 
     Patient (String name, String email){
-        this.name = name;
-        this.email = email;
+        super.(name,email);
     }
     //Creando un metodo get y set
     public void setWeight(double weight) {
@@ -33,16 +28,6 @@ public class Patient {
         this.height = height;
     }
 
-    public String getPhoneNumber() {
-        return "Teléfono: " + phoneNumber;
-    }
 
-    public void setPhoneNumber(String phoneNumber) {
-        if (phoneNumber.length() > 8) {
-            System.out.println("El número telefónico debe ser de máximo 8 dígitos");
-        }else if (phoneNumber.length() == 8) {
-            this.phoneNumber = phoneNumber;
-        }
 
-    }
 }
