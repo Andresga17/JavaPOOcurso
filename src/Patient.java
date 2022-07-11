@@ -9,7 +9,7 @@ public class Patient extends User {
     //Declarando el metodo constructor. name y email son los datos minimos necesarios para crear una instancia de esta clase
 
     Patient (String name, String email){
-        super.(name,email);
+        super(name, email);
     }
     //Creando un metodo get y set
     public void setWeight(double weight) {

@@ -7,9 +7,9 @@ public class Doctor extends User {
 
     //Declarando el metodo constructor dentro de la clase
     //se puede realizar una accion al llamar el metodo; como se muestra aqui.
-    Doctor(){
+    /*Doctor(){
         System.out.println("Construyendo el objeto Doctor");
-    }
+    }*/
 
     Doctor(String name, String email){//Sobrecarga de metodos. Agregando los argumentos minimos necesarios al metodo constructor para crear un objeto tipo Doctor
         /*System.out.println("El nombre del doctor asignado es: " + name);*/
@@ -20,11 +20,11 @@ public class Doctor extends User {
     //Comportamientos o metodos de la clase Doctor
     //Este metodo imprime el nombre del doctor
     public void showName(){
-        System.out.println(name);
+        System.out.println(getName());
     }
 
     public void showId(){
-        System.out.println("ID Doctor: " + id);//metodo que imprime el id de cada doctor
+        System.out.println("ID Doctor: " + getId());//metodo que imprime el id de cada doctor
     }
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();//Declarando un objeto de tipo ArrayList
     public void addAvailableAppointment(Date date, String time){//Metodo que asigna las nuevas citas a un array list
