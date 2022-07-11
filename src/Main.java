@@ -39,6 +39,7 @@ public class Main {
 //Usando get y set para asignar y validar las variables de la clase patient
         patient.setPhoneNumber("12345678");
         System.out.println(patient.getPhoneNumber());
+        System.out.println(patient);
     }
 
 }

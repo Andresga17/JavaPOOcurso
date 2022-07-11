@@ -8,7 +8,7 @@ public class Patient extends User {
 
     //Declarando el metodo constructor. name y email son los datos minimos necesarios para crear una instancia de esta clase
 
-    Patient (String name, String email){
+    Patient (String name, String email){ //Este es el metodo constructor de la clase User
         super(name, email);
     }
     //Creando un metodo get y set
@@ -28,6 +28,8 @@ public class Patient extends User {
         this.height = height;
     }
 
-
-
+    @Override
+    public String toString() { //Aplicando el polimorfismo
+        return super.toString() + "\nAge: " + birthday + "\nWeight: " + getWeight() + "\nHeight: " + getHeight() + "\nType blood: " + typeBlood;
+    }
 }

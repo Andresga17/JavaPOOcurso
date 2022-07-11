@@ -53,4 +53,10 @@ public class User {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    @Override
+    public String toString() { //Polimorfismo: Cambiando el comportamiento del metodo toString de la clase Object.
+        return "User: " + name + ", Email: " + email +
+                "\nAddress: " + address + ". Phone: " + phoneNumber;
+    }
 }
