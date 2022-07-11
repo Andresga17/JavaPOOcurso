@@ -17,14 +17,16 @@ public class Main {
 
         //showMenu();
         //Creando un objeto tipo doctor con los parametros minimos necesarios asignados en el metodo constructor de la clase Doctor
-        Doctor myDoctor = new Doctor("Andres Gonzalez", "Neurologia");
+        Doctor myDoctor = new Doctor("Andres Gonzalez", "yomero@gmail.com");
         myDoctor.addAvailableAppointment(new Date(),"4:00 p.m"); //Añadiendo nuevas citas a este doctor
-        myDoctor.addAvailableAppointment(new Date(),"10:00 a.m");
+        myDoctor.addAvailableAppointment(new Date(),"10:00 a.m");//Esto NO es una instancias de AvailableAppointment porque esta es una clase anidada estatica
         myDoctor.addAvailableAppointment(new Date(),"1:00 p.m");
 
-        for (Doctor.AvailableAppointment aA : myDoctor.getAvailableAppointments()) {
+        System.out.println(myDoctor);
+
+        /*for (Doctor.AvailableAppointment aA : myDoctor.getAvailableAppointments()) {
             System.out.println(aA.getDate() + " " + aA.getTime());
-        }
+        }*/
 
         System.out.println("Nombre del doctor: " + myDoctor.getName());
         System.out.println("email: " + myDoctor.getSpeciality());

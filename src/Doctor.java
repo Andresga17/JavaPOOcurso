@@ -43,6 +43,12 @@ public class Doctor extends User {
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
     }
+
+    @Override
+    public String toString() { //Sobreescribiendo toString
+        return super.toString() + "\nSpeciality: " + speciality + "\nAvailable: " + availableAppointments.toString();
+    }
+
     //Clase anidada
     public static class AvailableAppointment{
         private int id;
@@ -77,6 +83,10 @@ public class Doctor extends User {
 
         public void setTime(String time) {
             this.time = time;
+        }
+
+        public String toString() { //Sobreescribiendo toString (Este metodo no lleva el super porque tiene acceso a los atributos y metodos de la clase externa la cual ya está heredando de User
+            return "Available Appointment \nDate: " + date + "\nTime: " + time;
         }
 
     }
