@@ -1,22 +1,23 @@
-import java.util.Date;
+import model.Doctor;
+import model.Patient;
 
-import static ui.UIMenu.*;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
         //Utilizado el objeto (METODO CONSTRUCTOR)
         //El metodo constructor nunca retorna un valor
-        /*Doctor myDoctor = new Doctor();
+        /*model.Doctor myDoctor = new model.Doctor();
         myDoctor.name = "Alejandro Rodriguez";
         myDoctor.showName();
         myDoctor.showId();
 
 
-        Doctor myDoctorAnn = new Doctor();
+        model.Doctor myDoctorAnn = new model.Doctor();
         myDoctor.showId();*/
 
         //showMenu();
-        //Creando un objeto tipo doctor con los parametros minimos necesarios asignados en el metodo constructor de la clase Doctor
+        //Creando un objeto tipo doctor con los parametros minimos necesarios asignados en el metodo constructor de la clase model.Doctor
         Doctor myDoctor = new Doctor("Andres Gonzalez", "yomero@gmail.com");
         myDoctor.addAvailableAppointment(new Date(),"4:00 p.m"); //Añadiendo nuevas citas a este doctor
         myDoctor.addAvailableAppointment(new Date(),"10:00 a.m");//Esto NO es una instancias de AvailableAppointment porque esta es una clase anidada estatica
@@ -24,7 +25,7 @@ public class Main {
 
         System.out.println(myDoctor);
 
-        /*for (Doctor.AvailableAppointment aA : myDoctor.getAvailableAppointments()) {
+        /*for (model.Doctor.AvailableAppointment aA : myDoctor.getAvailableAppointments()) {
             System.out.println(aA.getDate() + " " + aA.getTime());
         }*/
 

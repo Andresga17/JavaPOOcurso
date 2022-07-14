@@ -1,30 +1,32 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 public class Doctor extends User {
-    //Atributos de la clase Doctor
+    //Atributos de la clase model.Doctor
 
     private String speciality;
 
     //Declarando el metodo constructor dentro de la clase
     //se puede realizar una accion al llamar el metodo; como se muestra aqui.
-    /*Doctor(){
-        System.out.println("Construyendo el objeto Doctor");
+    /*model.Doctor(){
+        System.out.println("Construyendo el objeto model.Doctor");
     }*/
 
-    Doctor(String name, String email){//Sobrecarga de metodos. Agregando los argumentos minimos necesarios al metodo constructor para crear un objeto tipo Doctor
+    public Doctor(String name, String email){//Sobrecarga de metodos. Agregando los argumentos minimos necesarios al metodo constructor para crear un objeto tipo model.Doctor
         /*System.out.println("El nombre del doctor asignado es: " + name);*/
         super(name, email);
         this.speciality = speciality;
     }
 
-    //Comportamientos o metodos de la clase Doctor
+    //Comportamientos o metodos de la clase model.Doctor
     //Este metodo imprime el nombre del doctor
     public void showName(){
         System.out.println(getName());
     }
 
     public void showId(){
-        System.out.println("ID Doctor: " + getId());//metodo que imprime el id de cada doctor
+        System.out.println("ID model.Doctor: " + getId());//metodo que imprime el id de cada doctor
     }
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();//Declarando un objeto de tipo ArrayList
     public void addAvailableAppointment(Date date, String time){//Metodo que asigna las nuevas citas a un array list
@@ -85,7 +87,7 @@ public class Doctor extends User {
             this.time = time;
         }
 
-        public String toString() { //Sobreescribiendo toString (Este metodo no lleva el super porque tiene acceso a los atributos y metodos de la clase externa la cual ya está heredando de User
+        public String toString() { //Sobreescribiendo toString (Este metodo no lleva el super porque tiene acceso a los atributos y metodos de la clase externa la cual ya está heredando de model.User
             return "Available Appointment \nDate: " + date + "\nTime: " + time;
         }
 
