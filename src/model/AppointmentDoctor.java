@@ -48,4 +48,8 @@ public class AppointmentDoctor implements ISchedulable {
     public void setTime (String time) {
         this.time = time;
     }
+
+    public void schedule(Date date, String time) { //Implementacion de metodo de la interface
+
+    }
 }

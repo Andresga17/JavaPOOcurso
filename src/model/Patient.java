@@ -34,4 +34,9 @@ public class Patient extends User {
     public String toString() { //Aplicando el polimorfismo
         return super.toString() + "\nAge: " + birthday + "\nWeight: " + getWeight() + "\nHeight: " + getHeight() + "\nType blood: " + typeBlood;
     }
+
+    public void showDataUser() {
+        System.out.println("Paciente");
+        System.out.println("Historial completo desde nacimiento");
+    }
 }

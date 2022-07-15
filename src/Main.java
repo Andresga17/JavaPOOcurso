@@ -26,10 +26,16 @@ public class Main {
 
         System.out.println(myDoctor);
 
+        User user = new Doctor("Andres Gonzalez", "yomero@gmail.com");
+        user.showDataUser();
+
+        User userPa = new Patient("Homero Jimeno", "Douh@gmail.com");
+        userPa.showDataUser();
+
 
         /*for (model.Doctor.AvailableAppointment aA : myDoctor.getAvailableAppointments()) {
             System.out.println(aA.getDate() + " " + aA.getTime());
-        }*/
+        }
 
         System.out.println("Nombre del doctor: " + myDoctor.getName());
         System.out.println("email: " + myDoctor.getSpeciality());
@@ -44,7 +50,7 @@ public class Main {
 //Usando get y set para asignar y validar las variables de la clase patient
         patient.setPhoneNumber("12345678");
         System.out.println(patient.getPhoneNumber());
-        System.out.println(patient);
+        System.out.println(patient);*/
     }
 
 }

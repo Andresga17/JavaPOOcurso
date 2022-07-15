@@ -61,4 +61,9 @@ public abstract class User {
         return "model.User: " + name + ", Email: " + email +
                 "\nAddress: " + address + ". Phone: " + phoneNumber;
     }
+    /*Creando metodo obligatorio de la clase abstracta
+    este metodo se debe implementar en todas las sublclases de la
+    clase User (Doctor, Patient, Nurse, AppointmentDoctor, AppointmentNurse
+     */
+    public abstract void showDataUser();
 }

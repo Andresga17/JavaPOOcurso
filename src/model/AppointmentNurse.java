@@ -48,4 +48,9 @@ public class AppointmentNurse implements ISchedulable {
     public void setTime(String time) {
         this.time = time;
     }
+
+    @Override
+    public void schedule(Date date, String time) { //Implementacion de metodo de la interface
+
+    }
 }
