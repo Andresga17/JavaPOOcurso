@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class UIMenu {
     //Creando el menu de Book an appointment (Lista de meses)
-    public static String[] MONTHS = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+    public static final String[] MONTHS = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
     public static Doctor doctorLogged;
     public static Patient patientLogged;
     public static void showMenu(){
@@ -46,6 +46,7 @@ public class UIMenu {
         //si userType = 1 entonces es un doctor
         //si userType = 2 entonces es un paciente
 
+//Simulacion de traer los datos de una base de datos
         ArrayList<Doctor> doctors = new ArrayList<>();
         doctors.add(new Doctor("Alejandro Martinez", "alejandro@gmail.com"));
         doctors.add(new Doctor("Karen sosa", "karen@gmail.com"));
@@ -55,7 +56,7 @@ public class UIMenu {
         patients.add(new Patient("Haraldo Rodriguez", "heraldo@gmail.com"));
         patients.add(new Patient("Roberto Ramirez", "roberto@gmail.com"));
         patients.add(new Patient("Carlos Sanchez", "carlos@gmail.com"));
-
+//Realizando de verificacion del email
         boolean emailCorrect = false;
         do {
             System.out.println("Insert your email: [a@a.com");
@@ -74,7 +75,7 @@ public class UIMenu {
         }
             if (userType == 2){
                 for (Patient p : patients){
-                    if(p.getEmail().equals()){
+                    if(p.getEmail().equals(email)){
                         emailCorrect = true;
                         patientLogged = p;
                         //showPatientMenu
@@ -83,7 +84,7 @@ public class UIMenu {
 
             }
 
-        }while (!emailCorrect)
+        }while (!emailCorrect);
 
 
     }
