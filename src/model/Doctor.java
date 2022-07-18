@@ -8,6 +8,7 @@ public class Doctor extends User {
     //Atributos de la clase model.Doctor
 
     private String speciality;
+    private ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();//Declarando un objeto de tipo ArrayList
 
     //Declarando el metodo constructor dentro de la clase
     //se puede realizar una accion al llamar el metodo; como se muestra aqui.
@@ -30,7 +31,7 @@ public class Doctor extends User {
     public void showId(){
         System.out.println("ID model.Doctor: " + getId());//metodo que imprime el id de cada doctor
     }
-    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();//Declarando un objeto de tipo ArrayList
+
     public void addAvailableAppointment(String date, String time){//Metodo que asigna las nuevas citas a un array list
         availableAppointments.add(new Doctor.AvailableAppointment(date,time));
     }
@@ -85,11 +86,11 @@ public class Doctor extends User {
         }
 
         //get y set de Date
-        public Date getDate() {
+        public Date getDate(String DATE) {
             return date;
         }
 
-        public String getDate(String DATE) {
+        public String getDate() {
             return format.format(date);
         }
 

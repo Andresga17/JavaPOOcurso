@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="740f5022-f0e9-47e4-8e4f-7693016ed549" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ui/UIPatientMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/UIDoctorMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UIDoctorMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/UIPatientMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UIPatientMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +99,11 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/Doctor.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
