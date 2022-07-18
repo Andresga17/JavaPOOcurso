@@ -64,6 +64,7 @@ public class Doctor extends User {
         private int id;
         private Date date;
         private String time;
+        //Instancia de la clase SimpleDateFormat que crea un formato para trbajar con fechas
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         //Metodo constructor
         public AvailableAppointment(String date, String time) { //Parametros minimos para que cree una cita disponible
@@ -104,7 +105,7 @@ public class Doctor extends User {
             this.time = time;
         }
 
-        public String toString() { //Sobreescribiendo toString (Este metodo no lleva el super porque tiene acceso a los atributos y metodos de la clase externa la cual ya está heredando de model.User
+        public String toString() { //Sobreescribiendo toString (Este metodo no lleva el super porque tiene acceso a los atributos y metodos de la clase externa la cual ya está heredando de model.User)
             return "Available Appointment \nDate: " + date + "\nTime: " + time;
         }
 
