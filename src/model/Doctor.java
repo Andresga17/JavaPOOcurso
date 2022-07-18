@@ -18,7 +18,7 @@ public class Doctor extends User {
     public Doctor(String name, String email){//Sobrecarga de metodos. Agregando los argumentos minimos necesarios al metodo constructor para crear un objeto tipo model.Doctor
         /*System.out.println("El nombre del doctor asignado es: " + name);*/
         super(name, email);
-        this.speciality = speciality;
+        this.speciality = speciality; //Esta linea se puede borrar o generar un error!!!
     }
 
     //Comportamientos o metodos de la clase model.Doctor
